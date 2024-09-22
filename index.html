@@ -9,18 +9,12 @@
 </head>
 <body>
 <!-- partial:index.partial.html -->
-<div class="title">  
-  <a href="https://example.com/images">  
-    <h1>Images</h1>  
-    <!-- 假设你还有一个按钮或图标也想链接到同一个URL -->  
-    <button type="button">点击查看更多</button>  
-  </a>  
-  <!-- 注意：并非所有元素都允许直接放在<a>标签内部，比如<button>就不应该放在<a>内部（这里只是为了说明）。  
-       对于按钮，你应该单独为它设置点击事件或链接。 -->  
-  
-  <!-- 更好的做法是单独为按钮设置链接，如下： -->  
-  <button type="button" onclick="window.location.href='https://example.com/images';">Go to Images</button>  
-</div>
+<div class="image-grid">
+    <div class="title">  
+      <a href="https://example.com/images">  
+        <h1>更多信息请点击</h1>  
+      </a>  
+    </div>
     <div class="image-grid__item pos-1">
         <img src="static/picture/img-1.jpg" alt="">
     </div>
