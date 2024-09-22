@@ -1,0 +1,100 @@
+* {
+  margin: 0 !important;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  src: url("https://assets.codepen.io/2479807/GrandSlang-Roman.otf");
+  font-family: "Grand Slang";
+}
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  overflow-x: hidden;
+  font-family: "Grand Slang";
+  font-weight: 400;
+  font-size: normal;
+  background-color: white;
+}
+
+h1 {
+  font-weight: 400;
+  font-size: 40px;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: #000;
+}
+
+.image-grid {
+  pointer-events: none;
+  position: absolute;
+  width: 110%;
+  height: 110%;
+  top: -5%;
+  left: -5%;
+  display: grid;
+  grid-template-columns: repeat(50, 2%);
+  grid-template-rows: repeat(50, 2%);
+}
+.image-grid__item {
+  opacity: 1;
+  position: relative;
+}
+.image-grid img {
+  will-change: transform;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+}
+
+.pos-1 {
+  grid-area: 10/1/36/8;
+}
+
+.pos-2 {
+  grid-area: 1/21/17/30;
+}
+
+.pos-3 {
+  grid-area: 1/36/14/42;
+}
+
+.pos-4 {
+  grid-area: 10/10/32/17;
+}
+
+.pos-5 {
+  grid-area: 20/35/35/45;
+}
+
+.pos-6 {
+  grid-area: 20/46/28/51;
+}
+
+.pos-7 {
+  grid-area: 43/1/51/10;
+}
+
+.pos-8 {
+  grid-area: 38/14/51/19;
+}
+
+.pos-9 {
+  grid-area: 40/26/51/32;
+}
+
+.pos-10 {
+  grid-area: 37/39/48/47;
+}
