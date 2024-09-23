@@ -24,6 +24,13 @@ h1 {
   font-size: 40px;
 }
 
+a {
+    display: block;
+    z-index: 1000; /* 确保 z-index 足够高 */
+    position: relative; /* 必须设置 position 才能生效 z-index */
+    pointer-events: auto;
+}
+
 .title {
   position: absolute;
   top: 50%;
